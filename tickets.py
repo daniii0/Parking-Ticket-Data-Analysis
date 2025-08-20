@@ -1,9 +1,8 @@
 #Name: Daniel Lavdari
-#Email: daniel.lavdari95@myhunter.cuny.edu
 #Date: November 25, 2024
-# Modify the parking ticket program from Lab 8 to do the following:
 # Ask the user for the name of the input file.
 # Ask the user for the attribute (column header) to search by.
+
 import pandas as pd
 
 csvFile = input('Enter CSV file name: ')  # Name of the CSV file
@@ -25,3 +24,4 @@ if attribute not in tickets.columns:
 
 print("The 10 worst offenders are:")
 print(tickets[attribute].value_counts()[:10])
+
